@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alan Alvarez</title>
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+
+  <div class="contenedor">
+    <header class="perfil">
+      <img src="recursos/fotos/estudiante01.jpg" alt="Alan Alvarez" class="foto-perfil" />
+      <h1>Alan Alvarez</h1>
+      
+    </header>
+
+    <section class="historia">
+      <div class="texto">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dicta incidunt sed accusantium! Fugiat ex, soluta sit recusandae tempore perferendis veniam unde, sequi dolorum consequatur in! At tempore nesciunt animi.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dicta incidunt sed accusantium! Fugiat ex, soluta sit recusandae tempore perferendis veniam unde, sequi dolorum consequatur in! At tempore nesciunt animi.
+        </p>
+      </div>
+      <img src="recursos/fotos/historia1.JPG" alt="en clase" class="imagen-lateral" />
+    </section>
+
+
+    <section class="intereses">
+      <h2>Música que hoy escucho</h2>
+      <ol>
+        <li>--------------------- </li>
+        <li>--------------------- </li>
+        <li>--------------------- </li>
+        <li>--------------------- </li>
+      </ol>
+    </section>
+    <section class="intereses">
+      <h2>Mis peliculas y series  que he mirado</h2>
+      <ol>
+        <li>--------------------- </li>
+        <li>--------------------- </li>
+        <li>--------------------- </li>
+        <li>--------------------- </li>
+      </ol>
+    </section>
+
+
+    <section class="podcast">
+      <h2>Les cuento una anecdota..</h2>
+      <audio controls>
+        <source src="recursos/audios/ringtones-super-mario-bros.mp3" type="audio/mpeg" />
+        Tu navegador no soporta el audio.
+      </audio>
+    </section>
+
+<!-- Sección de Pestañas (Tabs) -->
+<section class="trayectoria-tabs">
+  <div class="tab-buttons">
+    <button class="tab-btn active" onclick="abrirEtapa(event, 'jardin')">Jardín</button>
+    <button class="tab-btn" onclick="abrirEtapa(event, 'primaria')">Primaria</button>
+    <button class="tab-btn" onclick="abrirEtapa(event, 'secundaria')">Secundaria</button>
+  </div>
+
+  <!-- Contenido Jardín -->
+  <div id="jardin" class="tab-content active">
+    <h3>Etapa: Jardín</h3>
+    <p>Anécdotas, recuerdos o mensajes de esta etapa...</p>
+    <!-- Ejemplo para galería de fotos -->
+    <div class="galeria-etapa">
+      <img src="recursos/fotos/jardin01.jpg" alt="Foto Jardín">
+    </div>
+  </div>
+
+  <!-- Contenido Primaria -->
+  <div id="primaria" class="tab-content">
+    <h3>Etapa: Primaria</h3>
+    <p>Anécdotas, recuerdos o mensajes de esta etapa...</p>
+    <div class="galeria-etapa">
+      <img src="recursos/fotos/primaria01.jpg" alt="Foto Primaria">
+    </div>
+  </div>
+
+  <!-- Contenido Secundaria -->
+  <div id="secundaria" class="tab-content">
+    <h3>Etapa: Secundaria</h3>
+    <p>Anécdotas, recuerdos o mensajes de esta etapa...</p>
+    <div class="galeria-etapa">
+      <img src="recursos/fotos/secundaria01.jpg" alt="Foto Secundaria">
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- SECCIÓN: ACORDEÓN DE PREGUNTAS -->
+    <section class="preguntas">
+      <h2>Respondiendo.. </h2>
+
+      <div class="acordeon">
+        <button class="acordeon-btn">¿Qué aprendiste este año?</button>
+        <div class="acordeon-contenido">
+          <p>Aprendí que trabajar en equipo y escuchar a los demás hace que todo sea más fácil y divertido.</p>
+        </div>
+
+        <button class="acordeon-btn">¿Qué consejo le darías a los que vienen?</button>
+        <div class="acordeon-contenido">
+          <p>Que disfruten cada momento y no se preocupen tanto por los errores; son parte del aprendizaje.</p>
+        </div>
+
+        <button class="acordeon-btn">¿Qué vas a extrañar más?</button>
+        <div class="acordeon-contenido">
+          <p>Los mates en el recreo y las charlas con mis amigos después de clase.</p>
+        </div>
+      </div>
+    </section>
+
+    <a href="../../index.html" class="volver">⬅ Volver al anuario</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
